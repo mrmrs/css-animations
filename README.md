@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-animations)
 ## File Size
 
 1.0K animations.css
-850B animations.min.css
+850B animations.min.css 
+192B minified and gzipped
 
 ## The Code
 ```
