@@ -1,10 +1,10 @@
-# css-animations 0.0.7
+# css-animations 1.0.6
 
 Css module of single purpose classes for animations
 
 #### Stats
 
-222 | 16 | 16
+244 | 16 | 32
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-animations
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-animations
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-animations.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-animations";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-animations@1.0.6/css/css-animations.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,36 +68,36 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    ANIMATIONS
 */
-.a-dir-norm { animation-direction: normal; }
-.a-dir-rev { animation-direction: reverse; }
-.a-dir-alt { animation-direction: alternate; }
-.a-dir-alt-rev { animation-direction: alternate-reverse; }
+.a-dir-norm { -webkit-animation-direction: normal; animation-direction: normal; }
+.a-dir-rev { -webkit-animation-direction: reverse; animation-direction: reverse; }
+.a-dir-alt { -webkit-animation-direction: alternate; animation-direction: alternate; }
+.a-dir-alt-rev { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
 @media screen and (min-width: 48em) {
- .a-dir-norm-ns { animation-direction: normal; }
- .a-dir-rev-ns { animation-direction: reverse; }
- .a-dir-alt-ns { animation-direction: alternate; }
- .a-dir-alt-rev-ns { animation-direction: alternate-reverse; }
+ .a-dir-norm-ns { -webkit-animation-direction: normal; animation-direction: normal; }
+ .a-dir-rev-ns { -webkit-animation-direction: reverse; animation-direction: reverse; }
+ .a-dir-alt-ns { -webkit-animation-direction: alternate; animation-direction: alternate; }
+ .a-dir-alt-rev-ns { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .a-dir-norm-m { animation-direction: normal; }
- .a-dir-rev-m { animation-direction: reverse; }
- .a-dir-alt-m { animation-direction: alternate; }
- .a-dir-alt-rev-m { animation-direction: alternate-reverse; }
+ .a-dir-norm-m { -webkit-animation-direction: normal; animation-direction: normal; }
+ .a-dir-rev-m { -webkit-animation-direction: reverse; animation-direction: reverse; }
+ .a-dir-alt-m { -webkit-animation-direction: alternate; animation-direction: alternate; }
+ .a-dir-alt-rev-m { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
 }
 @media screen and (min-width: 64em) {
- .a-dir-norm-l { animation-direction: normal; }
- .a-dir-rev-l { animation-direction: reverse; }
- .a-dir-alt-l { animation-direction: alternate; }
- .a-dir-alt-rev-l { animation-direction: alternate-reverse; }
+ .a-dir-norm-l { -webkit-animation-direction: normal; animation-direction: normal; }
+ .a-dir-rev-l { -webkit-animation-direction: reverse; animation-direction: reverse; }
+ .a-dir-alt-l { -webkit-animation-direction: alternate; animation-direction: alternate; }
+ .a-dir-alt-rev-l { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
 }
 ```
 
@@ -99,3 +117,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
