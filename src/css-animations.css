@@ -8,10 +8,10 @@
 .a-dir-alt-rev {  animation-direction: alternate-reverse; }
 
 @media screen and (min-width: 48em) {
-  .a-dir-norm-ns {     animation-direction: normal; }
-  .a-dir-rev-ns {      animation-direction: reverse; }
-  .a-dir-alt-ns {      animation-direction: alternate; }
-  .a-dir-alt-rev-ns {  animation-direction: alternate-reverse; }
+  .a-dir-norm-s {     animation-direction: normal; }
+  .a-dir-rev-s {      animation-direction: reverse; }
+  .a-dir-alt-s {      animation-direction: alternate; }
+  .a-dir-alt-rev-s {  animation-direction: alternate-reverse; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
