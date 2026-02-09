@@ -1,38 +1,44 @@
 {
   "name": "css-animations",
-  "style": "animations.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-animations",
-  "description": "Css module of single purpose classes for animations",
+  "version": "2.0.0",
+  "description": "Functional CSS for animations",
+  "style": "dist/animations.css",
+  "main": "dist/animations.css",
+  "exports": {
+    ".": "./dist/animations.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "animations"
+    "animations",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-animations": {
+  "homepage": "https://github.com/mrmrs/css-animations",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-animations.git"
+    "url": "https://github.com/mrmrs/css-animations.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-animations/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-animations/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
