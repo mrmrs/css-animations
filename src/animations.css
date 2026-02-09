@@ -7,21 +7,21 @@
 .a-dir-alt {      animation-direction: alternate; }
 .a-dir-alt-rev {  animation-direction: alternate-reverse; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .a-dir-norm-s {     animation-direction: normal; }
   .a-dir-rev-s {      animation-direction: reverse; }
   .a-dir-alt-s {      animation-direction: alternate; }
   .a-dir-alt-rev-s {  animation-direction: alternate-reverse; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .a-dir-norm-m {     animation-direction: normal; }
   .a-dir-rev-m {      animation-direction: reverse; }
   .a-dir-alt-m {      animation-direction: alternate; }
   .a-dir-alt-rev-m {  animation-direction: alternate-reverse; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .a-dir-norm-l {     animation-direction: normal; }
   .a-dir-rev-l {      animation-direction: reverse; }
   .a-dir-alt-l {      animation-direction: alternate; }
