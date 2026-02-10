@@ -1,69 +1,69 @@
-.a-dir-norm {
+.a-direction-normal {
   animation-direction: normal;
 }
 
-.a-dir-rev {
+.a-direction-reverse {
   animation-direction: reverse;
 }
 
-.a-dir-alt {
+.a-direction-alternate {
   animation-direction: alternate;
 }
 
-.a-dir-alt-rev {
+.a-direction-alternate-reverse {
   animation-direction: alternate-reverse;
 }
 
 @media screen and (width >= 32em) {
-  .a-dir-norm-s {
+  .a-direction-normal-s {
     animation-direction: normal;
   }
 
-  .a-dir-rev-s {
+  .a-direction-reverse-s {
     animation-direction: reverse;
   }
 
-  .a-dir-alt-s {
+  .a-direction-alternate-s {
     animation-direction: alternate;
   }
 
-  .a-dir-alt-rev-s {
+  .a-direction-alternate-reverse-s {
     animation-direction: alternate-reverse;
   }
 }
 
 @media screen and (width >= 48em) {
-  .a-dir-norm-m {
+  .a-direction-normal-m {
     animation-direction: normal;
   }
 
-  .a-dir-rev-m {
+  .a-direction-reverse-m {
     animation-direction: reverse;
   }
 
-  .a-dir-alt-m {
+  .a-direction-alternate-m {
     animation-direction: alternate;
   }
 
-  .a-dir-alt-rev-m {
+  .a-direction-alternate-reverse-m {
     animation-direction: alternate-reverse;
   }
 }
 
 @media screen and (width >= 96em) {
-  .a-dir-norm-l {
+  .a-direction-normal-l {
     animation-direction: normal;
   }
 
-  .a-dir-rev-l {
+  .a-direction-reverse-l {
     animation-direction: reverse;
   }
 
-  .a-dir-alt-l {
+  .a-direction-alternate-l {
     animation-direction: alternate;
   }
 
-  .a-dir-alt-rev-l {
+  .a-direction-alternate-reverse-l {
     animation-direction: alternate-reverse;
   }
 }
