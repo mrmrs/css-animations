@@ -1,120 +1,84 @@
-# css-animations 1.0.6
+# css-animations
 
-Css module of single purpose classes for animations
+Functional CSS for animations
 
-#### Stats
+## Filesize
 
-244 | 16 | 32
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/animations.css` | 1225 bytes |
+| `dist/animations.min.css` | 995 bytes (183 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-animations
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-animations
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-animations.git
+```sh
+npm install css-animations
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-animations";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-animations@1.0.6/css/css-animations.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-animations">
+<link rel="stylesheet" href="https://unpkg.com/css-animations/dist/animations.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   ANIMATIONS
-*/
-.a-dir-norm { -webkit-animation-direction: normal; animation-direction: normal; }
-.a-dir-rev { -webkit-animation-direction: reverse; animation-direction: reverse; }
-.a-dir-alt { -webkit-animation-direction: alternate; animation-direction: alternate; }
-.a-dir-alt-rev { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-@media screen and (min-width: 48em) {
- .a-dir-norm-ns { -webkit-animation-direction: normal; animation-direction: normal; }
- .a-dir-rev-ns { -webkit-animation-direction: reverse; animation-direction: reverse; }
- .a-dir-alt-ns { -webkit-animation-direction: alternate; animation-direction: alternate; }
- .a-dir-alt-rev-ns { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .a-dir-norm-m { -webkit-animation-direction: normal; animation-direction: normal; }
- .a-dir-rev-m { -webkit-animation-direction: reverse; animation-direction: reverse; }
- .a-dir-alt-m { -webkit-animation-direction: alternate; animation-direction: alternate; }
- .a-dir-alt-rev-m { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-}
-@media screen and (min-width: 64em) {
- .a-dir-norm-l { -webkit-animation-direction: normal; animation-direction: normal; }
- .a-dir-rev-l { -webkit-animation-direction: reverse; animation-direction: reverse; }
- .a-dir-alt-l { -webkit-animation-direction: alternate; animation-direction: alternate; }
- .a-dir-alt-rev-l { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-animations/dist/animations.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.a-direction-normal` | `animation-direction: normal;` |
+| `.a-direction-reverse` | `animation-direction: reverse;` |
+| `.a-direction-alternate` | `animation-direction: alternate;` |
+| `.a-direction-alternate-reverse` | `animation-direction: alternate-reverse;` |
+| `.a-direction-normal-s` | `animation-direction: normal;` |
+| `.a-direction-reverse-s` | `animation-direction: reverse;` |
+| `.a-direction-alternate-s` | `animation-direction: alternate;` |
+| `.a-direction-alternate-reverse-s` | `animation-direction: alternate-reverse;` |
+| `.a-direction-normal-m` | `animation-direction: normal;` |
+| `.a-direction-reverse-m` | `animation-direction: reverse;` |
+| `.a-direction-alternate-m` | `animation-direction: alternate;` |
+| `.a-direction-alternate-reverse-m` | `animation-direction: alternate-reverse;` |
+| `.a-direction-normal-l` | `animation-direction: normal;` |
+| `.a-direction-reverse-l` | `animation-direction: reverse;` |
+| `.a-direction-alternate-l` | `animation-direction: alternate;` |
+| `.a-direction-alternate-reverse-l` | `animation-direction: alternate-reverse;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.a-direction-normal-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/animations.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/animations.css` — formatted
+- `dist/animations.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
