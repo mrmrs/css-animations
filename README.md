@@ -6,8 +6,8 @@ Functional CSS for animations
 
 | File | Size |
 |------|------|
-| `dist/animations.css` | 1225 bytes |
-| `dist/animations.min.css` | 995 bytes (183 Gzipped) |
+| `dist/animations.css` | 1041 bytes |
+| `dist/animations.min.css` | 811 bytes (179 Gzipped) |
 
 ## Install
 
@@ -39,22 +39,22 @@ npm install css-animations
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.a-direction-normal` | `animation-direction: normal;` |
-| `.a-direction-reverse` | `animation-direction: reverse;` |
-| `.a-direction-alternate` | `animation-direction: alternate;` |
-| `.a-direction-alternate-reverse` | `animation-direction: alternate-reverse;` |
-| `.a-direction-normal-s` | `animation-direction: normal;` |
-| `.a-direction-reverse-s` | `animation-direction: reverse;` |
-| `.a-direction-alternate-s` | `animation-direction: alternate;` |
-| `.a-direction-alternate-reverse-s` | `animation-direction: alternate-reverse;` |
-| `.a-direction-normal-m` | `animation-direction: normal;` |
-| `.a-direction-reverse-m` | `animation-direction: reverse;` |
-| `.a-direction-alternate-m` | `animation-direction: alternate;` |
-| `.a-direction-alternate-reverse-m` | `animation-direction: alternate-reverse;` |
-| `.a-direction-normal-l` | `animation-direction: normal;` |
-| `.a-direction-reverse-l` | `animation-direction: reverse;` |
-| `.a-direction-alternate-l` | `animation-direction: alternate;` |
-| `.a-direction-alternate-reverse-l` | `animation-direction: alternate-reverse;` |
+| `.a-dir-norm` | `animation-direction: normal;` |
+| `.a-dir-rev` | `animation-direction: reverse;` |
+| `.a-dir-alt` | `animation-direction: alternate;` |
+| `.a-dir-alt-rev` | `animation-direction: alternate-reverse;` |
+| `.a-dir-norm-s` | `animation-direction: normal;` |
+| `.a-dir-rev-s` | `animation-direction: reverse;` |
+| `.a-dir-alt-s` | `animation-direction: alternate;` |
+| `.a-dir-alt-rev-s` | `animation-direction: alternate-reverse;` |
+| `.a-dir-norm-m` | `animation-direction: normal;` |
+| `.a-dir-rev-m` | `animation-direction: reverse;` |
+| `.a-dir-alt-m` | `animation-direction: alternate;` |
+| `.a-dir-alt-rev-m` | `animation-direction: alternate-reverse;` |
+| `.a-dir-norm-l` | `animation-direction: normal;` |
+| `.a-dir-rev-l` | `animation-direction: reverse;` |
+| `.a-dir-alt-l` | `animation-direction: alternate;` |
+| `.a-dir-alt-rev-l` | `animation-direction: alternate-reverse;` |
 
 ### Responsive
 
@@ -66,7 +66,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.a-direction-normal-m` applies the property at the medium breakpoint and above.
+Example: `.a-dir-norm-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
